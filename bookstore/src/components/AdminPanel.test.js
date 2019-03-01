@@ -15,7 +15,7 @@ describe('App tests', () => {
         ReactDOM.unmountComponentAtNode(div);
     })
 
-    it('App renders', () => {
+    it('Snapshot matches', () => {
         const wrapper=shallow(<AdminPanel/>);
         // console.log(wrapper.debug());
         expect(wrapper).toMatchSnapshot();

@@ -3,7 +3,9 @@
 exports[`Order tests Snapshot matches 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Order />,
+  Symbol(enzyme.__unrendered__): <Order
+    order={Array []}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -18,11 +20,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Zamówienie",
-      "className": "order col-sm-4",
+      "children": Array [],
+      "className": "order col-xs-4",
     },
     "ref": null,
-    "rendered": "Zamówienie",
+    "rendered": Array [],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,11 +33,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Zamówienie",
-        "className": "order col-sm-4",
+        "children": Array [],
+        "className": "order col-xs-4",
       },
       "ref": null,
-      "rendered": "Zamówienie",
+      "rendered": Array [],
       "type": "div",
     },
   ],

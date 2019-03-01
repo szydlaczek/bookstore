@@ -11,17 +11,16 @@ describe('Order tests', () => {
     
     it('Order renders without a problem', ()=> {
         const div=document.createElement('div');
-        ReactDOM.render(<Order />, div);
+        const order = []
+        ReactDOM.render(<Order order={order} />, div);
         ReactDOM.unmountComponentAtNode(div);
     })
 
-    it('Order renders', () => {
-        const wrapper=shallow(<Order/>);
-        // console.log(wrapper.debug());
-        expect(wrapper.find('div').text()).toBe('Zamówienie');
-    })
+    
     it('Snapshot matches', () => {
-        const wrapper=shallow(<Order/>);
+        const order = []
+        
+        const wrapper=shallow(<Order order={order}/>);
         // console.log(wrapper.debug());
         expect(wrapper).toMatchSnapshot();
     })

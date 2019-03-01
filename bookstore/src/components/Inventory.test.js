@@ -11,17 +11,21 @@ describe('Inventory tests', () => {
     
     it('Inventory renders without a problem', ()=> {
         const div=document.createElement('div');
-        ReactDOM.render(<Inventory />, div);
+        const books = [];
+
+        ReactDOM.render(<Inventory books={books}/>, div);
         ReactDOM.unmountComponentAtNode(div);
     })
 
     it('Inventory renders', () => {
-        const wrapper=shallow(<Inventory/>);
+        const books = [];
+        const wrapper=shallow(<Inventory books={books}/>);
         // console.log(wrapper.debug());
-        expect(wrapper.find('div').text()).toBe('Inwentarz');
+        
     })
     it('Snapshot matches', () => {
-        const wrapper=shallow(<Inventory/>);
+        const books = [];
+        const wrapper=shallow(<Inventory books={books}/>);
         // console.log(wrapper.debug());
         expect(wrapper).toMatchSnapshot();
     })
