@@ -10,7 +10,7 @@ export default class Router extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={App}/>
-                    <Route  path="/" component={AdminPanel}/>
+                    <Route  path="/Admin" component={AdminPanel}/>
                     <Route exact component={PageNotFound}/>
                 </Switch>
             </BrowserRouter>

@@ -4,22 +4,30 @@ body {
   font-family: sans-serif;
 }
 
-.app {
-  background-color: aqua;
-}
-.header {
-  background-color: brown;
+
+.bookView {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
-.order {
-  background-color: darkgray;
+.orderView {
+  border-bottom: 2px solid black;
+  margin: 5px;
+  padding: 5px;
 }
 
-.inventory {
-  background-color: green;
-}
+
 
 .adminPanel {
   background-color: black;
   padding: 10px;
+}
+
+.goToAdmin {
+  float: right;
+}
+.loginForm {
+  margin-top: 10px;
 }
